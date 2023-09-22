@@ -1,10 +1,9 @@
-streamlit
-pandas==1.5
-scikit-learn
-xlsxwriter
 numpy
+pandas==1.5
 matplotlib
-openpyxl
+scikit-learn
 seaborn
+streamlit
 plotly
 mlem
+openpyxl
