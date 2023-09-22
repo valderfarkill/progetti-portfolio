@@ -1,9 +1,9 @@
-numpy
 pandas==1.5
 matplotlib
-scikit-learn
+scikit-learn==1.2.2
 seaborn
 streamlit
 plotly
-mlem
 openpyxl
+xlsxwriter
+joblib
