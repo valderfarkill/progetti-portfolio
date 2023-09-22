@@ -24,11 +24,7 @@ def add_bg_from_url():
 
 def main(): 
     
-    absolute_path = os.path.dirname(__file__)
-    relative_path = "model.mlem"
-    full_path = os.path.join(absolute_path, relative_path)
-    
-    new_model = mlem.api.load(full_path)
+    new_model = mlem.api.load("model.mlem")
     
     st.title('Company')
 
