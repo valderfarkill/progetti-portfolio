@@ -19,7 +19,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://media.makeameme.org/created/you-are-overfitting.jpg");
+             background-image: url("https://www.ediltecnico.it/wp-content/uploads/2019/01/bim-immobili-web-1280x720.jpg");
              background-attachment: fixed;
              background-size: cover
          }}
