@@ -1,0 +1,12 @@
+numpy
+pandas==1.5
+matplotlib
+scikit-learn
+seaborn
+streamlit
+plotly
+openpyxl
+nltk
+re
+joblib
+warnings

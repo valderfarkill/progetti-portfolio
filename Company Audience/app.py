@@ -20,7 +20,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://blogs.glowscotland.org.uk/ea/cumnockmedia/files/2014/10/audience-orange.jpg?w=300");
+             background-image: url("https://www.searchenginejournal.com/wp-content/uploads/2020/11/3-steps-to-better-content-power-up-your-content-seo-with-audience-understanding-5fa24f05cc7f7.png");
              background-attachment: fixed;
              background-size: cover
          }}
@@ -31,7 +31,11 @@ def add_bg_from_url():
 
 def main(): 
     
-    new_model = mlem.api.load('model.mlem')
+    absolute_path = os.path.dirname(__file__)
+    relative_path = "model.mlem"
+    full_path = os.path.join(absolute_path, relative_path)
+    
+    new_model = mlem.api.load(full_path)
     
     st.title('Company')
 
