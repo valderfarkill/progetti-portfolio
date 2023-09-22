@@ -1,10 +1,7 @@
 streamlit
 pandas==1.5
-scikit-learn
+scikit-learn==1.2.2
 xlsxwriter
 numpy
-matplotlib
 openpyxl
-seaborn
 plotly
-mlem
