@@ -1,10 +1,7 @@
-numpy
 pandas==1.5
-matplotlib
-scikit-learn
-seaborn
 streamlit
 plotly
 mlem
 openpyxl
-xlsxwriter
+os
+io
