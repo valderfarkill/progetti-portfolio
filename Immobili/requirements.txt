@@ -1,0 +1,10 @@
+streamlit
+pandas==1.5
+scikit-learn
+xlsxwriter
+numpy
+matplotlib
+openpyxl
+seaborn
+plotly
+mlem
