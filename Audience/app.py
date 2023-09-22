@@ -4,7 +4,7 @@ import streamlit as st
 import plotly.express as px
 import os
 import io
-
+import joblib
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -24,7 +24,9 @@ def add_bg_from_url():
 
 def main(): 
     
-    new_model = mlem.api.load("model.mlem")
+    absolute_path = os.path.dirname(__file__)
+    relative_path = "reg_test.pkl"
+    full_path = os.path.join(absolute_path, relative_path)
     
     st.title('Company')
 
@@ -65,7 +67,8 @@ def main():
     st.plotly_chart(fig, use_container_width=True)
 
     #mlem.api.save(model, 'model.mlem', sample_data=X_train)
-
+    
+    new_model = joblib.load(full_path)
 
     predictions = new_model.predict(X)
     custom_predictions = new_model.predict([[rd_spend, admin, marketing]])[0]
