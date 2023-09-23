@@ -28,7 +28,7 @@ def add_bg_from_url():
 
 
 def main():
-    st.text("Startup Multi Linear")
+    st.title("Startup Multi Linear")
 
     absolute_path = os.path.dirname(__file__)
     relative_path = "regression_test.pkl"
@@ -59,6 +59,7 @@ def main():
         file_name='regr_startup.xlsx',
         mime='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
     )
+    st.subheader("Input")
     input1 = st.number_input("Insert R&D value:",)
     input2 = st.number_input("Insert Administration value:",)
     input3 = st.number_input("Insert Marketing Spend value:",)

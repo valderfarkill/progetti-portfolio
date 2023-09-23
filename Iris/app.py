@@ -28,7 +28,7 @@ def add_bg_from_url():
 
 
 def main():
-    st.text("Iris Classification")
+    st.title("Iris Classification")
 
     absolute_path = os.path.dirname(__file__)
     relative_path = "regression_iris.pkl"
@@ -60,7 +60,7 @@ def main():
         mime='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
     )
     newmodel = joblib.load(full_path)
-
+    st.subheader("Input")
     sepal_lenght = st.number_input("sepal length", 1.0,10.0,3.0)
     sepal_width = st.number_input("sepal width", 1.0,10.0,3.0)
     petal_lenght = st.number_input("petal length", 1.0,10.0,3.0)
