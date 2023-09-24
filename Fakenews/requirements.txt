@@ -1,5 +1,9 @@
+XlsxWriter
+pandas==1.5
 streamlit
+numpy
+seaborn
+matplotlib
+plotly
 scikit-learn==1.2.2
 openpyxl
-joblib
-warnings
