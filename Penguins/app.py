@@ -24,9 +24,6 @@ def add_bg_from_url():
 
 feature_order = ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'island_Biscoe', 'island_Dream', 'island_Torgersen', 'sex_female','sex_male']
 
-
-
-
 # Streamlit app
 def main():
 
@@ -41,10 +38,10 @@ def main():
 
     # Input features from user
     st.header('Input Features')
-    bill_length_mm = st.number_input('Bill Length (mm)', min_value=0.0, max_value=100.0, value=40.0)
-    bill_depth_mm = st.number_input('Bill Depth (mm)', min_value=0.0, max_value=100.0, value=17.0)
-    flipper_length_mm = st.number_input('Flipper Length (mm)', min_value=0.0, max_value=100.0, value=100.0)
-    body_mass_g = st.number_input('Body Mass (g)', min_value=0.0, max_value=10000.0, value=3000.0)
+    bill_length_mm = st.number_input('Bill Length (mm)', min_value=32.1, step=0.01, max_value=59.6, value=32.1)
+    bill_depth_mm = st.number_input('Bill Depth (mm)', min_value=13.1, step=0.01, max_value=21.5, value=13.1)
+    flipper_length_mm = st.number_input('Flipper Length (mm)', min_value=172.0, step=0.01, max_value=231.0, value=172.0)
+    body_mass_g = st.number_input('Body Mass (g)', min_value=2700.0, step=0.01, max_value=6300.0, value=2700.0)
 
     if st.button('Predict'):
             # Create a DataFrame with the user's input for penguin regression
