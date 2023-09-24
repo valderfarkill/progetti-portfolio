@@ -81,7 +81,7 @@ def main():
         input13 = st.number_input("Insert istat value:",)
         prediction = newmodel.predict([[input1, input2, input3, input4, input5, input6, input7, input8, input9, input10, input11, input12, input13]])
         prediction = prediction[0]
-        st.write(f"Predicted: {round(prediction,1)}$")
+        st.write(f"Predicted: {round(prediction,1)}")
 
 
 
