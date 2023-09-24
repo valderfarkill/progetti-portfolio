@@ -1,9 +1,23 @@
 import streamlit as st
 import joblib
-import re
 import os
-import joblib
 
+import warnings
+warnings.filterwarnings('ignore')
+
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://s.france24.com/media/display/a234d7f4-0f85-11ee-beee-005056bfb2b6/w:1280/p:16x9/EN-TRUTH-OR-FAKE_1920x1080.jpg");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
 
 # Streamlit app
 def main():
@@ -38,4 +52,5 @@ def main():
         st.write(result)
         
 if __name__ == '__main__':
+    add_bg_from_url()
     main()

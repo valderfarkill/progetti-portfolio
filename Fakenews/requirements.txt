@@ -1,12 +1,5 @@
-numpy
-pandas==1.5
-matplotlib
-scikit-learn
-seaborn
 streamlit
-plotly
+scikit-learn==1.2.2
 openpyxl
-nltk
-re
 joblib
 warnings
