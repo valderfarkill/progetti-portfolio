@@ -26,7 +26,7 @@ def add_bg_from_url():
      )
 
 def main(): 
-    st.text("Immobili")
+    st.title("Immobili")
 
     absolute_path = os.path.dirname(__file__)
     relative_path = "reg_test.pkl"
@@ -65,7 +65,7 @@ def main():
     if file is None:
 
         #inference
-        st.text("Try the model")
+        st.subheader("Try the model")
         input1 = st.number_input("Insert crim value:",)
         input2 = st.number_input("Insert zn value:",)
         input3 = st.number_input("Insert indus value:",)
