@@ -1,6 +1,0 @@
-pandas==1.5
-scikit-learn==1.2.2
-streamlit
-plotly
-joblib
-xlsxwriter
