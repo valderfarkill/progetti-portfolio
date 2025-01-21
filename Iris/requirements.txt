@@ -1,7 +1,7 @@
-pandas==1.5
+pandas==2.1.1
 streamlit
 scikit-learn==1.2.2
 xlsxwriter
-numpy
+numpy==2.0.0
 openpyxl
 joblib
